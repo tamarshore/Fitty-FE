@@ -1,17 +1,24 @@
-<mat-toolbar>
-  <a routerLink="/">
-    <img class="logo" src="../../assets/logo.png">
-  </a>
-  <button mat-button routerLink="/about">About</button>
-  <button mat-button routerLink="/measurements">Measurements</button>
-  <button mat-button routerLink="/contact">Contact</button>
-  <button class="bold_button" mat-button routerLink="/login">
-    <mat-icon>person</mat-icon>
-    Login
-  </button>
-  <button class="bold_button" mat-button routerLink="/sign-up">
-    <mat-icon>person_add</mat-icon>
-    Sign Up
-  </button>
-  <button mat-raised-button routerLink="/business">Business</button>
-</mat-toolbar>
+<div class="header">
+  <mat-toolbar class="main-toolbar">
+    <a routerLink="/">
+      <img class="logo" src="../../assets/logo.png">
+    </a>
+    <button mat-button routerLink="/about">About</button>
+    <button mat-button routerLink="/measurements">Measurements</button>
+    <button mat-button routerLink="/contact">Contact</button>
+  </mat-toolbar>
+  <div class="login-toolbar">
+    <mat-toolbar >
+      <button class="bold_button" mat-button routerLink="/login">
+        <mat-icon>person</mat-icon>
+        Login
+      </button>
+      <button class="bold_button" mat-button routerLink="/sign-up">
+        <mat-icon>person_add</mat-icon>
+        Sign Up
+      </button>
+      <button mat-raised-button routerLink="/business">Business</button>
+    </mat-toolbar>
+  </div>
+
+</div>

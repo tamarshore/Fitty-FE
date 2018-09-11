@@ -1,9 +1,28 @@
-mat-toolbar {
+.header {
   display: flex;
-  justify-content: space-around;
+
+  .login-toolbar {
+    width: 100%;
+
+    mat-toolbar {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    mat-toolbar /deep/ {
+      background-color: #93b9ce;
+      color: white;
+    }
+  }
+
+  .main-toolbar {
+    background: none;
+    padding: 0;
+  }
 }
 
 .logo {
-  height: 60px;
-  width: 120px;
+  width: 60px;
+  margin: 10px;
 }
+

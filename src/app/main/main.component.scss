@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+}
+.cover-image {
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.cover-container {
+  width: 50%;
+  padding-top: 40px;
+  padding-left: 20px;
+
+  .title {
+    font-size: 25px;
+
+    .t1 {
+      margin: 0 20px;
+    }
+    .t2 {
+      margin: 0 20px;
+    }
+  }
+
+  .description {
+    margin-left: 10px;
+    line-height: 1.5;
+  }
+}
+
+
+
