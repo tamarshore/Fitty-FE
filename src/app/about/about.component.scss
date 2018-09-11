@@ -1,6 +1,7 @@
 :host {
   display: flex;
 }
+
 .cover-image {
   background-size: cover;
   width: 50%;
@@ -12,15 +13,9 @@
   padding-top: 40px;
   padding-left: 20px;
 
-  .title {
+  .t1 {
+    margin: 0 20px;
     font-size: 25px;
-
-    .t1 {
-      margin: 0 20px;
-    }
-    .t2 {
-      margin: 0 20px;
-    }
   }
 
   .description {
@@ -28,6 +23,3 @@
     line-height: 1.5;
   }
 }
-
-
-

@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ToolsService} from '../services/tools.service';
 
 @Component({
   selector: 'app-header',
@@ -6,11 +7,13 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  public headerColor: string;
 
-  constructor() {
+  constructor(private toolsService: ToolsService) {
   }
 
   ngOnInit() {
+    this.toolsService.headerColor.subscribe((color) => this.headerColor = color);
   }
 
 }
